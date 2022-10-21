@@ -1,0 +1,254 @@
+@font-face {
+	font-family: "Orchidee";
+	src: url("/fonts/Orchidee-Light.ttf");
+	src: url("/fonts/Orchidee-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Forum";
+	src: url("/fonts/Forum-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Forum", sans-serif;
+}
+
+.order,
+.card-details,
+#final-message {
+	display: none;
+}
+
+/* IMAGES */
+
+img {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.item-img {
+	height: 6em;
+	width: 100%;
+}
+
+/* HEADER */
+
+header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	text-align: center;
+	height: 20vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	background-image: url(/img/main-photo.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+
+header h1 {
+	font-family: "Orchidee", sans-serif;
+	font-size: 1rem;
+}
+
+/* ITEMS SECTION */
+
+.menu,
+.order {
+	width: 90%;
+	margin: 3em auto;
+}
+
+.item {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #8b8b8b;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.item-img-box {
+	width: 25%;
+}
+
+.item-img-box,
+.item-info {
+	display: flex;
+	align-items: center;
+}
+
+.item-info {
+	width: 70%;
+}
+
+.item-desc {
+	width: 80%;
+	padding: 0em 0.5em;
+}
+
+.item-desc h3 {
+	letter-spacing: 0.5px;
+}
+
+.ingredients {
+	margin: 1em 0;
+	color: #8b8b8b;
+}
+
+.add-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 15%;
+}
+
+.add-button i {
+	border: 1px solid;
+	border-radius: 50%;
+	font-size: 1.3em;
+	padding: 0.3em;
+	cursor: pointer;
+}
+
+/* ORDER SECTION */
+
+.order {
+	margin-top: 1.5em;
+}
+
+.order-items {
+	border-bottom: 2px solid;
+	padding-bottom: 0.4em;
+}
+
+.total-price,
+.item-value {
+	display: flex;
+	justify-content: space-between;
+}
+
+.order-picked {
+	list-style: none;
+}
+
+.order-picked li {
+	position: relative;
+}
+
+.item-value {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.3em;
+}
+
+.remove {
+	color: #8b8b8b;
+	font-size: 0.8rem;
+	margin-left: 0.5em;
+	cursor: pointer;
+}
+
+.order .order-title {
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+
+.order-items h3,
+.order-items button {
+	letter-spacing: 0.5px;
+}
+
+.total-price {
+	margin: 0.7em 0 1.5em 0;
+}
+
+#complete-order,
+.payBtn {
+	height: 3em;
+	width: 100%;
+	color: white;
+	letter-spacing: 1px;
+	background: #16db99;
+	font-size: 1em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.order button {
+	margin-bottom: 2.5em;
+}
+
+/* FORM SECTION */
+
+.card-details {
+	height: 20em;
+	width: 20em;
+	border-radius: 5px;
+	box-shadow: 0px 0px 80px black;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 80%;
+}
+
+.container input {
+	width: 100%;
+	height: 2.8em;
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+
+.container h2 {
+	margin-bottom: 1em;
+}
+
+.container button {
+	margin-top: 1.5em;
+}
+
+.payBtn {
+	letter-spacing: 1.5px;
+}
+
+.processed {
+	font-size: 1.4em;
+}
+
+.loading-icon {
+	height: 11em;
+}
+
+/* FINAL MESSAGE */
+
+#final-message {
+	height: 3.5em;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 1.2em;
+	padding: 0.6em;
+	color: #065f46;
+	background: #16db99;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.2em;
+}
+
+.message-container {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
